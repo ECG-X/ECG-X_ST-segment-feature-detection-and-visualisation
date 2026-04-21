@@ -1,0 +1,22 @@
+data:
+  input_dir: ../data/processed/control_group
+  output_dir: ../plots/control_group
+  leads: ['i', 'ii', 'iii', 'avr', 'avl', 'avf', 'v1', 'v4', 'v5', 'v6']
+
+plot:
+  sampling_rate: 1000
+  segment_duration_sec: 5
+  total_duration_sec: 30
+  mm_per_second: 25
+  mm_per_mv: 10
+  max_amplitude: 3
+  show_custom_baseline: True
+  show_black_threshold_line: True
+  fill_auc: True
+  show_axis_labels: True
+  show_inline_plot: False
+  occupy_full_fig_canvas: True
+  save_plot: True
+
+debug:
+  plot_intermediate_ecgs: False

@@ -1,0 +1,10 @@
+data:
+  base_directory: "../data/ptb-diagnostic-ecg-database-1.0.0/" # Base directory where the PTB Diagnostic ECG Database is located
+  record_file: "RECORDS"  # The name file listing all the records in the dataset
+
+general:
+    sampling_rate: 1000  # Sampling rate for the ECG data in Hz
+    separate_by_diagnosis: True # classify data into myocardial and other diagnosis classes based on .hea file. If .hea exists in your db with diagnosis class then use this to separate out csvs based on class otherwise keep it false and all data is processed into csv
+
+output:
+    output_directory: "../data/processed/"  # Output directory for all records converted to CSV format
